@@ -31,7 +31,7 @@ label neutral_end:
     pause
     hide sh_1_h
     show bs
-    show fr_a at left
+    show fr at left
     show gg at right
     show gl
     a "Фух, наконец-то закончили!"

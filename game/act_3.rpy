@@ -39,7 +39,7 @@ label act_3_cont:
     hide bshall
     show bs
     with fade
-    image gl = "главный.png"
+    
     show gl at left
     show prepod
     show gg at right
@@ -358,8 +358,10 @@ label act_3_end:
     pause
     hide dr_a_l
     show dr
-    show gg at left
-    show fr at right
+    show gg at left: 
+        xzoom -1.0 yzoom 1.0
+    show fr at right: 
+        xzoom -1.0 yzoom 1.0
     v "Что бы ты хотела ещё узнать?"
     hide dr
     hide gg
@@ -368,8 +370,10 @@ label act_3_end:
     pause
     hide dr_story
     show dr
-    show gg at left
-    show fr at right
+    show gg at left: 
+        xzoom -1.0 yzoom 1.0
+    show fr at right: 
+        xzoom -1.0 yzoom 1.0
     a " Столько всего нового узнала. Спасибо, что рассказал всё."
     hide dr
     hide fr

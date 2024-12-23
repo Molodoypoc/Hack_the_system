@@ -13,12 +13,8 @@ default authority = 0
 default count = 0
 default help_agree = False
 
-image gg = "главный_герой1.png"
-image gg_a = "главный_герой_сердитый.png"
-image gg_h = "главный_герой_удивление.png"
-image fr = "друг_гг.png"
-image fr_a = "друг_гг_сердитый.png"
-image fr_h = "друг_гг_удивление.png"
+
+
 image cr = im.Scale("classroom.png", 1920, 1080)
 image st = im.Scale("street.png", 1920, 1080)
 image gg_room = im.Scale("gg_room.png", 1920, 1080)
@@ -31,12 +27,6 @@ image bs = im.Scale("base.png", 1920, 1080)
 image bshall = im.Scale("фон_коридор_секретной_орг.png", 1920, 1080)
 image comp = im.Scale("фон_личные_комп.png", 1920, 1080)
 image dr = im.Scale("фон_столовая.png", 1920, 1080)
-image 1 = im.Scale("1.png", 1920, 1080)
-image 2 = im.Scale("2.png", 1920, 1080)
-image 3 = im.Scale("3.png", 1920, 1080)
-image 4 = im.Scale("4.png", 1920, 1080)
-image 5 = im.Scale("5.png", 1920, 1080)
-image 6 = im.Scale("6.png", 1920, 1080)
 
 image fnxtday = im.Scale("фон класс на след день.png", 1920, 1080)
 image cc_20 = im.Scale("фон комп класс спустя 2 часа.png", 1920, 1080)
@@ -55,6 +45,8 @@ image sh_w_l = im.Scale("фон штаб спустя неделю.png", 1920, 1
 
 init:
     define vpunch3 = Move ((0, 10), (0, -10),.10, bounce=True, repeat=True, delay=.275*4)
+    transform from_center_to_left:
+        linear 5 xpos -0.30
 # Игра начинается здесь:
 label start:
     jump act_1
